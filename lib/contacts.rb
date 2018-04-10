@@ -19,7 +19,7 @@ def remove_strawberry(contacts)
     attributes.each do |key, value|
       if key == :favorite_ice_cream_flavors
         binding.pry
-        key.delete_if { |x| x == "strawberry"}
+        value.delete_if { |x| x == "strawberry"}
       end
     end
   end
